@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ino5x6-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -78,17 +79,6 @@ F 2 "" H 4000 2400 50  0001 C CNN
 F 3 "" H 4000 2400 50  0001 C CNN
 	1    4000 2400
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 5B9DBCBB
-P 1800 2500
-F 0 "#PWR04" H 1800 2250 50  0001 C CNN
-F 1 "GND" V 1805 2372 50  0000 R CNN
-F 2 "" H 1800 2500 50  0001 C CNN
-F 3 "" H 1800 2500 50  0001 C CNN
-	1    1800 2500
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR03
@@ -375,9 +365,6 @@ Wire Wire Line
 Connection ~ 6100 1900
 Wire Wire Line
 	6100 1900 6100 1400
-Connection ~ 6100 2700
-Wire Wire Line
-	6100 2700 6100 1900
 Connection ~ 6100 3500
 Wire Wire Line
 	6100 3500 6100 2700
@@ -496,15 +483,12 @@ F 3 "" H 7400 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 5100 7000 4300
-Connection ~ 7000 1900
-Wire Wire Line
-	7000 1900 7000 1400
 Connection ~ 7000 2700
 Wire Wire Line
 	7000 2700 7000 1900
 Connection ~ 7000 3500
 Wire Wire Line
-	7000 3500 7000 2700
+	7000 3500 7000 3300
 Connection ~ 7000 4300
 Wire Wire Line
 	7000 4300 7000 3500
@@ -620,9 +604,6 @@ F 3 "" H 8300 5300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7900 5100 7900 4300
-Connection ~ 7900 1900
-Wire Wire Line
-	7900 1900 7900 1400
 Connection ~ 7900 2700
 Wire Wire Line
 	7900 2700 7900 1900
@@ -631,7 +612,7 @@ Wire Wire Line
 	7900 3500 7900 2700
 Connection ~ 7900 4300
 Wire Wire Line
-	7900 4300 7900 3500
+	7900 4300 7900 4100
 $Comp
 L Switch:SW_Push SW21
 U 1 1 5B9DD5C4
@@ -743,10 +724,7 @@ F 3 "" H 9200 5300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8800 5100 8800 4300
-Connection ~ 8800 1900
-Wire Wire Line
-	8800 1900 8800 1400
+	8800 5100 8800 4900
 Connection ~ 8800 2700
 Wire Wire Line
 	8800 2700 8800 1900
@@ -979,12 +957,6 @@ Text Label 5200 1400 0    50   ~ 0
 col0
 Text Label 6100 1400 0    50   ~ 0
 col1
-Text Label 7000 1400 0    50   ~ 0
-col2
-Text Label 7900 1400 0    50   ~ 0
-col3
-Text Label 8800 1400 0    50   ~ 0
-col4
 Text Label 9700 1400 0    50   ~ 0
 col5
 Wire Wire Line
@@ -1034,9 +1006,239 @@ col5
 NoConn ~ 3200 2200
 NoConn ~ 3200 2600
 NoConn ~ 1800 2800
-NoConn ~ 1800 2700
-NoConn ~ 1800 2600
 NoConn ~ 1800 2300
-NoConn ~ 1800 2200
 NoConn ~ 3200 2700
+$Comp
+L Jumper:Jumper_2_Bridged JP1
+U 1 1 5BA132B7
+P 6100 2300
+F 0 "JP1" V 6054 2358 50  0000 L CNN
+F 1 "Jumper_2_Bridged" V 6150 1800 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6100 2300 50  0001 C CNN
+F 3 "~" H 6100 2300 50  0001 C CNN
+	1    6100 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6100 2200 6100 2100
+Connection ~ 6100 2700
+Connection ~ 6100 2100
+Wire Wire Line
+	6100 2100 6100 1900
+Wire Wire Line
+	6100 2500 6100 2700
+$Comp
+L Jumper:Jumper_2_Bridged JP2
+U 1 1 5BA1DA0C
+P 7000 3100
+F 0 "JP2" V 6954 3158 50  0000 L CNN
+F 1 "Jumper_2_Bridged" V 7050 2600 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7000 3100 50  0001 C CNN
+F 3 "~" H 7000 3100 50  0001 C CNN
+	1    7000 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 2900 7000 2700
+$Comp
+L Jumper:Jumper_2_Bridged JP3
+U 1 1 5BA1F540
+P 7900 3900
+F 0 "JP3" V 7854 3958 50  0000 L CNN
+F 1 "Jumper_2_Bridged" V 7950 3400 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7900 3900 50  0001 C CNN
+F 3 "~" H 7900 3900 50  0001 C CNN
+	1    7900 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7900 3700 7900 3500
+$Comp
+L Jumper:Jumper_2_Bridged JP4
+U 1 1 5BA20BA1
+P 8800 4700
+F 0 "JP4" V 8754 4758 50  0000 L CNN
+F 1 "Jumper_2_Bridged" V 8850 4200 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8800 4700 50  0001 C CNN
+F 3 "~" H 8800 4700 50  0001 C CNN
+	1    8800 4700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 4500 8800 4300
+$Comp
+L Jumper:Jumper_2_Bridged JP5
+U 1 1 5BA2137B
+P 7000 1400
+F 0 "JP5" V 6954 1458 50  0000 L CNN
+F 1 "Jumper_2_Bridged" V 7050 900 50  0000 L CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 7000 1400 50  0001 C CNN
+F 3 "~" H 7000 1400 50  0001 C CNN
+	1    7000 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_2_Bridged JP6
+U 1 1 5BA2A74E
+P 7900 1400
+F 0 "JP6" V 7854 1458 50  0000 L CNN
+F 1 "Jumper_2_Bridged" V 7950 900 50  0000 L CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 7900 1400 50  0001 C CNN
+F 3 "~" H 7900 1400 50  0001 C CNN
+	1    7900 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Jumper:Jumper_2_Bridged JP7
+U 1 1 5BA2D65E
+P 8800 1400
+F 0 "JP7" V 8754 1458 50  0000 L CNN
+F 1 "Jumper_2_Bridged" V 8850 900 50  0000 L CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 8800 1400 50  0001 C CNN
+F 3 "~" H 8800 1400 50  0001 C CNN
+	1    8800 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 1600 7000 1900
+Connection ~ 7000 1900
+Wire Wire Line
+	7900 1600 7900 1900
+Connection ~ 7900 1900
+Wire Wire Line
+	8800 1600 8800 1900
+Connection ~ 8800 1900
+Wire Wire Line
+	7000 1200 7000 1000
+Wire Wire Line
+	7900 1200 7900 1000
+Wire Wire Line
+	8800 1200 8800 1000
+Text Label 7000 1000 0    50   ~ 0
+col2
+Text Label 7900 1000 0    50   ~ 0
+col3
+Text Label 8800 1000 0    50   ~ 0
+col4
+$Comp
+L power:VCC #PWR08
+U 1 1 5B9E35AF
+P 2250 4550
+F 0 "#PWR08" H 2250 4400 50  0001 C CNN
+F 1 "VCC" V 2267 4678 50  0000 L CNN
+F 2 "" H 2250 4550 50  0001 C CNN
+F 3 "" H 2250 4550 50  0001 C CNN
+	1    2250 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR09
+U 1 1 5B9E6C51
+P 2250 4850
+F 0 "#PWR09" H 2250 4600 50  0001 C CNN
+F 1 "GND" V 2255 4722 50  0000 R CNN
+F 2 "" H 2250 4850 50  0001 C CNN
+F 3 "" H 2250 4850 50  0001 C CNN
+	1    2250 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 4650 2750 4650
+Wire Wire Line
+	2250 4750 2750 4750
+Text Label 2750 4650 0    50   ~ 0
+sda
+Wire Wire Line
+	1800 2700 1500 2700
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 5B9FD4A1
+P 2050 4650
+F 0 "J1" H 2156 4928 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 2156 4837 50  0000 C CNN
+F 2 "Connectors:PJ320D_3.5mm_Jack" H 2050 4650 50  0001 C CNN
+F 3 "~" H 2050 4650 50  0001 C CNN
+	1    2050 4650
+	1    0    0    -1  
+$EndComp
+Text Label 1500 2700 0    50   ~ 0
+sda
+$Comp
+L power:GND #PWR04
+U 1 1 5B9E8E80
+P 1800 2500
+F 0 "#PWR04" H 1800 2250 50  0001 C CNN
+F 1 "GND" V 1805 2372 50  0000 R CNN
+F 2 "" H 1800 2500 50  0001 C CNN
+F 3 "" H 1800 2500 50  0001 C CNN
+	1    1800 2500
+	0    1    1    0   
+$EndComp
+NoConn ~ 1800 2600
+$Comp
+L Connector:Conn_01x01_Male J2
+U 1 1 5B9E4E89
+P 1600 2200
+F 0 "J2" H 1706 2378 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 1706 2287 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 1600 2200 50  0001 C CNN
+F 3 "~" H 1600 2200 50  0001 C CNN
+	1    1600 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J3
+U 1 1 5B9F07BD
+P 2950 4750
+F 0 "J3" H 2923 4773 50  0000 R CNN
+F 1 "Conn_01x01_Male" H 2923 4682 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 2950 4750 50  0001 C CNN
+F 3 "~" H 2950 4750 50  0001 C CNN
+	1    2950 4750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J4
+U 1 1 5B9F4C76
+P 2200 5700
+F 0 "J4" H 2306 5878 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 2306 5787 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 2200 5700 50  0001 C CNN
+F 3 "~" H 2200 5700 50  0001 C CNN
+	1    2200 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male J5
+U 1 1 5B9F4D66
+P 3300 5700
+F 0 "J5" H 3406 5878 50  0000 C CNN
+F 1 "Conn_01x01_Male" H 3406 5787 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3300 5700 50  0001 C CNN
+F 3 "~" H 3300 5700 50  0001 C CNN
+	1    3300 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR010
+U 1 1 5B9F89E0
+P 2400 5700
+F 0 "#PWR010" H 2400 5550 50  0001 C CNN
+F 1 "VCC" V 2417 5828 50  0000 L CNN
+F 2 "" H 2400 5700 50  0001 C CNN
+F 3 "" H 2400 5700 50  0001 C CNN
+	1    2400 5700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 5B9FA91C
+P 3500 5700
+F 0 "#PWR011" H 3500 5550 50  0001 C CNN
+F 1 "VCC" V 3517 5828 50  0000 L CNN
+F 2 "" H 3500 5700 50  0001 C CNN
+F 3 "" H 3500 5700 50  0001 C CNN
+	1    3500 5700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
