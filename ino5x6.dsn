@@ -33,13 +33,16 @@
     )
   )
   (placement
+    (component Connectors:PJ320D_3.5mm_Jack
+      (place J1 141000 -49000 back 270 (PN Conn_01x04_Male))
+    )
     (component Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm
-      (place J4 130810 -55880 front 0 (PN Conn_01x01_Male))
+      (place J4 152000 -53000 front 0 (PN Conn_01x01_Male))
       (place J2 63500 -57150 front 0 (PN Conn_01x01_Male))
     )
     (component Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm::1
       (place J5 63500 -52070 front 0 (PN Conn_01x01_Male))
-      (place J3 130810 -46990 front 0 (PN Conn_01x01_Male))
+      (place J3 152000 -46000 front 0 (PN Conn_01x01_Male))
     )
     (component Wire_Connections_Bridges:WireConnection_0.80mmDrill
       (place JP7 135255 -60960 front 270 (PN Jumper_2_Bridged))
@@ -47,9 +50,6 @@
     (component Wire_Connections_Bridges:WireConnection_0.80mmDrill::1
       (place JP6 121285 -60960 front 270 (PN Jumper_2_Bridged))
       (place JP5 108585 -60960 front 270 (PN Jumper_2_Bridged))
-    )
-    (component Connectors:PJ320D_3.5mm_Jack
-      (place J1 141605 -51765 back 90 (PN Conn_01x04_Male))
     )
     (component Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm
       (place JP1 81915 -83820 front 0 (PN Jumper_2_Bridged))
@@ -133,8 +133,48 @@
     (component promicro:ProMicro
       (place U1 78105 -54610 front 0 (PN ProMicro))
     )
+    (component Mounting_Holes:MountingHole_3.2mm_M3
+      (place hole3 165000 -45000 front 0 (PN MountingHole_3.2mm_M3))
+      (place hole4 165000 -160000 front 0 (PN MountingHole_3.2mm_M3))
+      (place hole2 55000 -160000 front 0 (PN MountingHole_3.2mm_M3))
+      (place hole1 55000 -45000 front 0 (PN MountingHole_3.2mm_M3))
+    )
   )
   (library
+    (image Connectors:PJ320D_3.5mm_Jack
+      (outline (path signal 100  -5575 -2900  6225 -2900))
+      (outline (path signal 100  6225 -2900  6225 -2300))
+      (outline (path signal 100  6225 -2300  8225 -2300))
+      (outline (path signal 100  8225 -2300  8225 2300))
+      (outline (path signal 100  8225 2300  6225 2300))
+      (outline (path signal 100  6225 2300  6225 2900))
+      (outline (path signal 100  6225 2900  -5575 2900))
+      (outline (path signal 100  -5575 2900  -5575 -2900))
+      (outline (path signal 120  -4225 -3100  6375 -3100))
+      (outline (path signal 120  -5625 -3100  -5725 -3100))
+      (outline (path signal 120  -4525 3100  -5725 3100))
+      (outline (path signal 120  -525 3100  -3125 3100))
+      (outline (path signal 120  2475 3100  875 3100))
+      (outline (path signal 120  6375 3100  3875 3100))
+      (outline (path signal 50  -6070 -5000  -6070 5000))
+      (outline (path signal 50  8730 -5000  8730 5000))
+      (outline (path signal 120  -5725 -3100  -5725 3100))
+      (outline (path signal 50  8730 -5000  -6070 -5000))
+      (outline (path signal 50  8730 5000  -6070 5000))
+      (outline (path signal 120  6375 3100  6375 2500))
+      (outline (path signal 120  6375 -2500  6375 -3100))
+      (outline (path signal 120  8375 2500  8375 -2500))
+      (outline (path signal 120  6375 2500  8375 2500))
+      (outline (path signal 120  6375 -2500  8375 -2500))
+      (pin Rect[T]Pad_1200x2500_um 4 -4925 -3250)
+      (pin Rect[T]Pad_1200x2500_um 1 -3825 3250)
+      (pin Rect[T]Pad_1200x2500_um 2 175 3250)
+      (pin Rect[T]Pad_1200x2500_um 3 3175 3250)
+      (keepout "" (circle F.Cu 1500 4775 0))
+      (keepout "" (circle B.Cu 1500 4775 0))
+      (keepout "" (circle F.Cu 1500 -2225 0))
+      (keepout "" (circle B.Cu 1500 -2225 0))
+    )
     (image Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm
       (outline (path signal 100  -635 1270  1270 1270))
       (outline (path signal 100  1270 1270  1270 -1270))
@@ -178,40 +218,6 @@
     (image Wire_Connections_Bridges:WireConnection_0.80mmDrill::1
       (pin Round[A]Pad_1998.98_um 2 6350 0)
       (pin Round[A]Pad_1998.98_um 1 0 0)
-    )
-    (image Connectors:PJ320D_3.5mm_Jack
-      (outline (path signal 100  5575 -2900  -6225 -2900))
-      (outline (path signal 100  -6225 -2900  -6225 -2300))
-      (outline (path signal 100  -6225 -2300  -8225 -2300))
-      (outline (path signal 100  -8225 -2300  -8225 2300))
-      (outline (path signal 100  -8225 2300  -6225 2300))
-      (outline (path signal 100  -6225 2300  -6225 2900))
-      (outline (path signal 100  -6225 2900  5575 2900))
-      (outline (path signal 100  5575 2900  5575 -2900))
-      (outline (path signal 120  4225 -3100  -6375 -3100))
-      (outline (path signal 120  5625 -3100  5725 -3100))
-      (outline (path signal 120  4525 3100  5725 3100))
-      (outline (path signal 120  525 3100  3125 3100))
-      (outline (path signal 120  -2475 3100  -875 3100))
-      (outline (path signal 120  -6375 3100  -3875 3100))
-      (outline (path signal 50  6070 -5000  6070 5000))
-      (outline (path signal 50  -8730 -5000  -8730 5000))
-      (outline (path signal 120  5725 -3100  5725 3100))
-      (outline (path signal 50  -8730 -5000  6070 -5000))
-      (outline (path signal 50  -8730 5000  6070 5000))
-      (outline (path signal 120  -6375 3100  -6375 2500))
-      (outline (path signal 120  -6375 -2500  -6375 -3100))
-      (outline (path signal 120  -8375 2500  -8375 -2500))
-      (outline (path signal 120  -6375 2500  -8375 2500))
-      (outline (path signal 120  -6375 -2500  -8375 -2500))
-      (pin Rect[T]Pad_1200x2500_um 4 4925 -3250)
-      (pin Rect[T]Pad_1200x2500_um 1 3825 3250)
-      (pin Rect[T]Pad_1200x2500_um 2 -175 3250)
-      (pin Rect[T]Pad_1200x2500_um 3 -3175 3250)
-      (keepout "" (circle F.Cu 1500 -4775 0))
-      (keepout "" (circle B.Cu 1500 -4775 0))
-      (keepout "" (circle F.Cu 1500 2225 0))
-      (keepout "" (circle B.Cu 1500 2225 0))
     )
     (image Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm
       (outline (path signal 100  -635 1270  1270 1270))
@@ -405,6 +411,25 @@
       (pin Round[A]Pad_1600_um 22 -8890 7620)
       (pin Round[A]Pad_1600_um 23 -11430 7620)
       (pin Round[A]Pad_1600_um 24 -13970 7620)
+    )
+    (image Mounting_Holes:MountingHole_3.2mm_M3
+      (outline (path signal 150  3200 0  3119.77 -712.067  2883.1 -1388.43  2501.86 -1995.17
+            1995.17 -2501.86  1388.43 -2883.1  712.067 -3119.77  0 -3200
+            -712.067 -3119.77  -1388.43 -2883.1  -1995.17 -2501.86  -2501.86 -1995.17
+            -2883.1 -1388.43  -3119.77 -712.067  -3200 0  -3119.77 712.067
+            -2883.1 1388.43  -2501.86 1995.17  -1995.17 2501.86  -1388.43 2883.1
+            -712.067 3119.77  0 3200  712.067 3119.77  1388.43 2883.1  1995.17 2501.86
+            2501.86 1995.17  2883.1 1388.43  3119.77 712.067  3200 0))
+      (outline (path signal 50  3450 0  3369.34 -741.648  3131.14 -1448.62  2746.52 -2087.85
+            2233.48 -2629.46  1616.01 -3048.12  922.973 -3324.25  186.779 -3444.94
+            -558.148 -3404.55  -1276.98 -3204.97  -1936.1 -2855.53  -2504.68 -2372.56
+            -2956.16 -1778.66  -3269.4 -1101.59  -3429.78 -373.011  -3429.78 373.011
+            -3269.4 1101.59  -2956.16 1778.66  -2504.68 2372.56  -1936.1 2855.53
+            -1276.98 3204.97  -558.148 3404.55  186.779 3444.94  922.973 3324.25
+            1616.01 3048.12  2233.48 2629.46  2746.52 2087.85  3131.14 1448.62
+            3369.34 741.648  3450 0))
+      (keepout "" (circle F.Cu 3200))
+      (keepout "" (circle B.Cu 3200))
     )
     (padstack Round[A]Pad_1600_um
       (shape (circle F.Cu 1600))
@@ -604,7 +629,7 @@
       (pins U1-20)
     )
     (net VCC
-      (pins J4-1 J5-1 J1-1 U1-21)
+      (pins J1-1 J4-1 J5-1 U1-21)
     )
     (net "Net-(U1-Pad24)"
       (pins U1-24)
@@ -640,7 +665,7 @@
       (pins U1-5)
     )
     (net "Net-(J1-Pad3)"
-      (pins J3-1 J1-3)
+      (pins J1-3 J3-1)
     )
     (class kicad_default "" /col0 /col1 /col2 /col3 /col4 /col5 /row0 /row1
       /row2 /row3 /row4 /sda GND "Net-(D1-Pad1)" "Net-(D10-Pad1)" "Net-(D11-Pad1)"
