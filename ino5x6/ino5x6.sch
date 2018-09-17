@@ -980,8 +980,8 @@ Wire Wire Line
 Wire Wire Line
 	1800 3000 1500 3000
 Wire Wire Line
-	1800 2900 1500 2900
-Text Label 1500 2900 0    50   ~ 0
+	1800 2800 1500 2800
+Text Label 1500 2800 0    50   ~ 0
 row0
 Text Label 1500 3000 0    50   ~ 0
 row1
@@ -1005,7 +1005,6 @@ Text Label 3500 3300 0    50   ~ 0
 col5
 NoConn ~ 3200 2200
 NoConn ~ 3200 2600
-NoConn ~ 1800 2800
 NoConn ~ 1800 2300
 NoConn ~ 3200 2700
 $Comp
@@ -1240,5 +1239,50 @@ F 2 "" H 3500 5700 50  0001 C CNN
 F 3 "" H 3500 5700 50  0001 C CNN
 	1    3500 5700
 	0    1    1    0   
+$EndComp
+NoConn ~ 1800 2900
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5B9FB144
+P 1700 6450
+F 0 "MH2" H 1800 6496 50  0000 L CNN
+F 1 "MountingHole" H 1800 6405 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1700 6450 50  0001 C CNN
+F 3 "~" H 1700 6450 50  0001 C CNN
+	1    1700 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5B9FB28E
+P 1700 6200
+F 0 "MH1" H 1800 6246 50  0000 L CNN
+F 1 "MountingHole" H 1800 6155 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1700 6200 50  0001 C CNN
+F 3 "~" H 1700 6200 50  0001 C CNN
+	1    1700 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5B9FB478
+P 1700 6700
+F 0 "MH3" H 1800 6746 50  0000 L CNN
+F 1 "MountingHole" H 1800 6655 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1700 6700 50  0001 C CNN
+F 3 "~" H 1700 6700 50  0001 C CNN
+	1    1700 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5B9FB53A
+P 1700 6950
+F 0 "MH4" H 1800 6996 50  0000 L CNN
+F 1 "MountingHole" H 1800 6905 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 1700 6950 50  0001 C CNN
+F 3 "~" H 1700 6950 50  0001 C CNN
+	1    1700 6950
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
