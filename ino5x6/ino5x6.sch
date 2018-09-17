@@ -1013,7 +1013,7 @@ U 1 1 5BA132B7
 P 6100 2300
 F 0 "JP1" V 6054 2358 50  0000 L CNN
 F 1 "Jumper_2_Bridged" V 6150 1800 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6100 2300 50  0001 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 6100 2300 50  0001 C CNN
 F 3 "~" H 6100 2300 50  0001 C CNN
 	1    6100 2300
 	0    1    1    0   
@@ -1032,7 +1032,7 @@ U 1 1 5BA1DA0C
 P 7000 3100
 F 0 "JP2" V 6954 3158 50  0000 L CNN
 F 1 "Jumper_2_Bridged" V 7050 2600 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7000 3100 50  0001 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 7000 3100 50  0001 C CNN
 F 3 "~" H 7000 3100 50  0001 C CNN
 	1    7000 3100
 	0    1    1    0   
@@ -1045,7 +1045,7 @@ U 1 1 5BA1F540
 P 7900 3900
 F 0 "JP3" V 7854 3958 50  0000 L CNN
 F 1 "Jumper_2_Bridged" V 7950 3400 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 7900 3900 50  0001 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 7900 3900 50  0001 C CNN
 F 3 "~" H 7900 3900 50  0001 C CNN
 	1    7900 3900
 	0    1    1    0   
@@ -1058,7 +1058,7 @@ U 1 1 5BA20BA1
 P 8800 4700
 F 0 "JP4" V 8754 4758 50  0000 L CNN
 F 1 "Jumper_2_Bridged" V 8850 4200 50  0000 L CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 8800 4700 50  0001 C CNN
+F 2 "Wire_Connections_Bridges:WireConnection_0.80mmDrill" H 8800 4700 50  0001 C CNN
 F 3 "~" H 8800 4700 50  0001 C CNN
 	1    8800 4700
 	0    1    1    0   
